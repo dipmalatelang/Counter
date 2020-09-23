@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="6dp"
+        android:layout_margin="3dp"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/cardview_shadow_end_color"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="40dp">
+
+            <TextView
+                android:id="@+id/TvTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="21dp"
+                android:text="Clock 1"
+
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+
+                />
+            <TextView
+                android:id="@+id/TvTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="133dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="21dp"
+                android:text="Clock 2"
+
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/TvTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TvTime1"
+                android:layout_marginTop="200dp"
+                android:text="Clock 3"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/TvTime4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TvTime1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="200dp"
+                android:text="Clock 4"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
